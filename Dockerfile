@@ -4,7 +4,7 @@
 # AUTHOR:         Alexander Turcic <alex@zeitgeist.se>
 # DESCRIPTION:    Latest version of calibre (with GUI) in a Docker container
 # TO_BUILD:       docker build --rm -t zeitgeist/docker-calibre .
-# SOURCE:         https://github.com/zeitgeist/docker-calibre
+# SOURCE:         https://github.com/alexzeitgeist/docker-calibre
 
 # Pull base image.
 FROM debian:jessie
