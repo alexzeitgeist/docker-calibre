@@ -80,9 +80,11 @@ RUN \
     python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()" && \
     rm -rf /tmp/*
 
-# Setup user environment.
+# Setup user environment. Replace 1000 with your user / group id.
 RUN \
-  useradd --create-home user
+  export uid=1000 gid=1000 && \
+  groupadd --gid ${gid} user && \
+  useradd --uid ${uid} --gid ${gid} --create-home user
 
 USER user
 WORKDIR /home/user
