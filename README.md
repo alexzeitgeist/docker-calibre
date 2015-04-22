@@ -85,7 +85,7 @@ This adds the host's 3D / hardware acceleration to the container. Not sure if ca
 
 ## Caveats
 
-* External links that would open a browser of file viewer don't work from within the container. 
+* External links that would open a browser or file viewer don't work from within the container. 
 
 ## Help! I started the container but I don't see calibre
 
